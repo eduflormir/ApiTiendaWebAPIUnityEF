@@ -6,9 +6,9 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Microsoft.Practices.Unity;
-using Repositorio;
-using RepositorioApiTienda.Models;
-using RepositorioApiTienda.ViewModels;
+using RepositorioApiTienda.Model;
+using RepositorioApiTienda.ViewModel;
+using RepositorioBase.Repositorio;
 
 namespace ApiTienda.Controllers
 {
@@ -19,10 +19,12 @@ namespace ApiTienda.Controllers
         [Dependency] // con este decorador le indico a Unity que inyecte
         // instanciar Repositorio
         public IRepositorio<Producto, ProductoViewModel> repo { get; set; }
+
         
-        public ICollection<ProductoViewModel> Get()
+        // lista de productos
+        public List<ProductoViewModel> Get()
         {
-            return repo.Get();
+            return repo.Get().ToList();
         }
 
         [ResponseType(typeof(ProductoViewModel))]

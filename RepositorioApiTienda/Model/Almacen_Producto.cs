@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RepositorioApiTienda.Models
+namespace RepositorioApiTienda.Model
 {
     using System;
     using System.Collections.Generic;

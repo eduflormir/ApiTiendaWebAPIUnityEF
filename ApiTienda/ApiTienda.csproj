@@ -138,13 +138,13 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Projects\ASPNet\RepositorioBase\RepositorioBase\BaseRepositorio.csproj">
+      <Project>{67a8a349-4dd2-40e8-9744-7dacfb3bcf3c}</Project>
+      <Name>BaseRepositorio</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RepositorioApiTienda\RepositorioApiTienda.csproj">
       <Project>{8c6653b0-42db-4126-abec-ad89187c1394}</Project>
       <Name>RepositorioApiTienda</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Repositorio\Repositorio.csproj">
-      <Project>{858e516d-aa61-4926-a520-d16f36136d88}</Project>
-      <Name>Repositorio</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -55,66 +55,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Almacen.cs">
+    <Compile Include="Model\Almacen.cs">
       <DependentUpon>ModelTienda.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Almacen_Producto.cs">
+    <Compile Include="Model\Almacen_Producto.cs">
       <DependentUpon>ModelTienda.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Categoria.cs">
+    <Compile Include="Model\Categoria.cs">
       <DependentUpon>ModelTienda.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Etiqueta.cs">
+    <Compile Include="Model\Etiqueta.cs">
       <DependentUpon>ModelTienda.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelTienda.Context.cs">
+    <Compile Include="Model\ModelTienda.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelTienda.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelTienda.cs">
+    <Compile Include="Model\ModelTienda.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelTienda.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelTienda.Designer.cs">
+    <Compile Include="Model\ModelTienda.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelTienda.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Producto.cs">
+    <Compile Include="Model\Producto.cs">
       <DependentUpon>ModelTienda.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\ProductoViewModel.cs" />
+    <Compile Include="ViewModel\AlmacenViewModel.cs" />
+    <Compile Include="ViewModel\CategoriaViewModel.cs" />
+    <Compile Include="ViewModel\EtiquetaViewModel.cs" />
+    <Compile Include="ViewModel\AlmacenProductoViewModel.cs" />
+    <Compile Include="ViewModel\ProductoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Repositorio\Repositorio.csproj">
-      <Project>{858e516d-aa61-4926-a520-d16f36136d88}</Project>
-      <Name>Repositorio</Name>
+    <ProjectReference Include="..\..\..\..\..\..\Projects\ASPNet\RepositorioBase\RepositorioBase\BaseRepositorio.csproj">
+      <Project>{67A8A349-4DD2-40E8-9744-7DACFB3BCF3C}</Project>
+      <Name>BaseRepositorio</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EntityDeploy Include="Models\ModelTienda.edmx">
+    <EntityDeploy Include="Model\ModelTienda.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelTienda.Designer.cs</LastGenOutput>
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="Models\ModelTienda.edmx.diagram">
+    <None Include="Model\ModelTienda.edmx.diagram">
       <DependentUpon>ModelTienda.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\ModelTienda.Context.tt">
+    <Content Include="Model\ModelTienda.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelTienda.edmx</DependentUpon>
       <LastGenOutput>ModelTienda.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ModelTienda.tt">
+    <Content Include="Model\ModelTienda.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelTienda.edmx</DependentUpon>
       <LastGenOutput>ModelTienda.cs</LastGenOutput>

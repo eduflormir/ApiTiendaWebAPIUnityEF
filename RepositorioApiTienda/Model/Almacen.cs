@@ -7,31 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RepositorioApiTienda.Models
+namespace RepositorioApiTienda.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Producto
+    public partial class Almacen
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Producto()
+        public Almacen()
         {
             this.Almacen_Producto = new HashSet<Almacen_Producto>();
-            this.Etiqueta = new HashSet<Etiqueta>();
         }
     
-        public int id_producto { get; set; }
-        public string fabricante_nombre { get; set; }
-        public string descripcion_corta { get; set; }
-        public decimal precio_coste { get; set; }
-        public decimal precio_venta { get; set; }
-        public int id_categoria { get; set; }
+        public int id_almacen { get; set; }
+        public string ciudad { get; set; }
+        public int codigo_postal { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Almacen_Producto> Almacen_Producto { get; set; }
-        public virtual Categoria Categoria { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Etiqueta> Etiqueta { get; set; }
     }
 }

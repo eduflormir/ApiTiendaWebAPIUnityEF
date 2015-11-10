@@ -1,10 +1,10 @@
 using System.Data.Entity;
 using Microsoft.Practices.Unity;
 using System.Web.Http;
-using Repositorio;
-using RepositorioApiTienda.Models;
-using RepositorioApiTienda.ViewModels;
+using RepositorioApiTienda.Model;
+using RepositorioApiTienda.ViewModel;
 using Unity.WebApi;
+using RepositorioBase.Repositorio;
 
 namespace ApiTienda
 {
@@ -19,12 +19,16 @@ namespace ApiTienda
             // it is NOT necessary to register your controllers
 
             // e.g. container.RegisterType<ITestService, TestService>();
-
-            // crear un dbcontext con el constructor de Tienda25Entities
-            container.RegisterType<DbContext, Tienda25Entities>();
             
+            // Registro de todas las dependencias
+            // REPOSITORIO, crear un dbcontext con el constructor de Tienda25Entities
+            container.RegisterType<DbContext, Tienda25Entities>();
             container.RegisterType<IRepositorio<Producto, ProductoViewModel>,
             RepositorioEntity<Producto, ProductoViewModel>>();
+
+            container.RegisterType<IRepositorio<Almacen_Producto, AlmacenProductoViewModel>,
+            RepositorioEntity<Almacen_Producto, AlmacenProductoViewModel>>();
+
 
             // para escribir logs
             // para enviar emails
