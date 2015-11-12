@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTienda", "ApiTienda\ApiT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositorioApiTienda", "RepositorioApiTienda\RepositorioApiTienda.csproj", "{8C6653B0-42DB-4126-ABEC-AD89187C1394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseRepositorio", "..\..\..\..\..\Projects\ASPNet\RepositorioBase\RepositorioBase\BaseRepositorio.csproj", "{67A8A349-4DD2-40E8-9744-7DACFB3BCF3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseRepositorio", "..\BaseRepositorio\BaseRepositorio\BaseRepositorio.csproj", "{F71CFB2D-A49E-45A9-B8B1-E913A755E8B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{8C6653B0-42DB-4126-ABEC-AD89187C1394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C6653B0-42DB-4126-ABEC-AD89187C1394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C6653B0-42DB-4126-ABEC-AD89187C1394}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67A8A349-4DD2-40E8-9744-7DACFB3BCF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67A8A349-4DD2-40E8-9744-7DACFB3BCF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67A8A349-4DD2-40E8-9744-7DACFB3BCF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67A8A349-4DD2-40E8-9744-7DACFB3BCF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71CFB2D-A49E-45A9-B8B1-E913A755E8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71CFB2D-A49E-45A9-B8B1-E913A755E8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71CFB2D-A49E-45A9-B8B1-E913A755E8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71CFB2D-A49E-45A9-B8B1-E913A755E8B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RepositorioApiTienda.Model;
-using RepositorioBase.ViewModel;
+using BaseRepositorio.ViewModel;
 
 namespace RepositorioApiTienda.ViewModel
 {

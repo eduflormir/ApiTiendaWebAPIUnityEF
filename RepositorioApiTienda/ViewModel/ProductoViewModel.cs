@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BaseRepositorio.ViewModel;
 using RepositorioApiTienda.Model;
-using RepositorioBase.ViewModel;
+
 
 namespace RepositorioApiTienda.ViewModel
 {

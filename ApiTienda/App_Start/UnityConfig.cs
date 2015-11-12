@@ -3,8 +3,9 @@ using Microsoft.Practices.Unity;
 using System.Web.Http;
 using RepositorioApiTienda.Model;
 using RepositorioApiTienda.ViewModel;
+using BaseRepositorio.Repositorio;
 using Unity.WebApi;
-using RepositorioBase.Repositorio;
+
 
 namespace ApiTienda
 {

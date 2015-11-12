@@ -93,12 +93,6 @@
     <Compile Include="ViewModel\ProductoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Projects\ASPNet\RepositorioBase\RepositorioBase\BaseRepositorio.csproj">
-      <Project>{67A8A349-4DD2-40E8-9744-7DACFB3BCF3C}</Project>
-      <Name>BaseRepositorio</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EntityDeploy Include="Model\ModelTienda.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelTienda.Designer.cs</LastGenOutput>
@@ -125,6 +119,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BaseRepositorio\BaseRepositorio\BaseRepositorio.csproj">
+      <Project>{f71cfb2d-a49e-45a9-b8b1-e913a755e8b8}</Project>
+      <Name>BaseRepositorio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
